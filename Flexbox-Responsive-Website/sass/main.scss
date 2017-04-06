@@ -1,0 +1,543 @@
+@import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import "../bower_components/font-awesome/scss/font-awesome";
+@import "../bower_components/animate.css/animate.css";
+@import '../bower_components/owl.carousel/dist/assets/owl.carousel.css';
+@import '../bower_components/owl.carousel/dist/assets/owl.theme.default.css';
+@import '../bower_components/lightbox2/dist/css/lightbox.css';
+@import "_variables";
+$nav-items-color: #fff; //---UNIVERSAL COMAND
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $body-color;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+    height: 2000px;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.navbar {
+    background: $navbar;
+    padding: 0;
+    margin: 0;
+
+    .toggle {
+        display: inline-block;
+    }
+
+    .link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+
+        &:active,
+        &:hover {
+            background: #555;
+        }
+    }
+
+    .toggle {
+        padding: 10px;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+#showcase {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/bg-img.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    //--modal log-gin
+    #mystyle {
+        height: 20%;
+        margin-top: 10%;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 40px;
+        color: #eee;
+        font-size: 50px;
+    }
+
+    .h1-animate {
+        animation-delay: 0.5s;
+    }
+}
+
+#show {
+    width: 100%;
+    height: 390px;
+    word-wrap: break-word;
+
+    .title {
+        margin: 10px auto 0 40px;
+    }
+
+    p {
+        margin: 10px auto 0 40px;
+        height: auto;
+    }
+}
+
+.flex-container-show {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .box {
+        height: 80%;
+        flex-basis: 22%;
+        border-radius: 3px;
+
+        &:hover {
+            box-shadow: 10px 10px 5px #888888;
+        }
+    }
+
+    .box1 {
+        img {
+            position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .box2 {
+        img {
+            position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .box3 {
+        img {
+            position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .box4 {
+        img {
+            position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+//--showcase number 2 section
+
+#showcase-number2 {
+    width: 100%;
+    height: 500px;
+
+    .title {
+        margin-left: 40px;
+    }
+
+    p {
+        margin: 10px auto 0 40px;
+        height: auto;
+    }
+}
+
+.flex-container {
+    width: 100%;
+    height: 87%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .box {
+        height: 80%;
+        flex-basis: 30%;
+
+        &:hover {
+            box-shadow: 10px 10px 5px #888888;
+        }
+    }
+
+    .box1 {
+        background: #fff;
+        display: flex;
+
+        .img-box {
+            width: 45%;
+            height: 100%;
+            background-image: url("../img/section-shoucase2-1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .content-box {
+            width: 55%;
+            height: 90%;
+            list-style-type: none;
+            color: black;
+
+            h2 {
+                margin-left: 10%;
+            }
+
+            li {
+                margin-left: 10%;
+                padding: 1%;
+            }
+        }
+    }
+
+    .box2 {
+        background: rgb(52, 68, 217);
+        display: flex;
+
+        .img-box {
+            width: 45%;
+            height: 100%;
+            background-image: url("../img/section-shoucase2-2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .content-box {
+            width: 55%;
+            height: 90%;
+            list-style-type: none;
+            color: #fff;
+
+            h2 {
+                margin-left: 10%;
+            }
+
+            li {
+                margin-left: 10%;
+                padding: 1%;
+            }
+        }
+    }
+
+    .box3 {
+        background: rgb(200, 131, 242);
+        display: flex;
+
+        .img-box {
+            width: 45%;
+            height: 100%;
+            background-image: url("../img/section-shoucase2-3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .content-box {
+        width: 55%;
+        height: 90%;
+        list-style-type: none;
+        color: #fff;
+
+        h2 {
+            margin-left: 10%;
+        }
+
+        li {
+            margin-left: 10%;
+            padding: 1%;
+        }
+    }
+}
+
+#inline-carousel {
+    width: 100%;
+    height: 400px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    .owl-theme {
+        box-shadow: none;
+    }
+
+    .owl-carousel {
+        width: 80%;
+        margin: auto;
+        box-shadow: 10px 10px 5px #888888;
+    }
+
+    .box {
+        width: 100%;
+        height: 200px;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .box1 {
+        background: red;
+        background-image: url("../img/inline-carousel-img1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box2 {
+        background-image: url("../img/inline-carousel-img2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box3 {
+        background-image: url("../img/inline-carousel-img3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box4 {
+        background-image: url("../img/inline-carousel-img4.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box5 {
+        background-image: url("../img/inline-carousel-img5.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box6 {
+        background-image: url("../img/inline-carousel-img6.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box7 {
+        background-image: url("../img/inline-carousel-img7.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .box8 {
+        background-image: url("../img/inline-carousel-img8.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#reach-us {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+
+    h1 {
+        margin-top: 5%;
+        padding-bottom: 20px;
+    }
+
+    a {
+        padding: 10px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: black;
+    border-top: 2px solid rgb(95, 144, 252);
+    color: #fff;
+    text-align: center;
+}
+//---media queries
+@media (min-width:1024px) and (max-width:1300px) {
+    #show {
+        .box {
+            height: 60%;
+            flex-basis: 23%;
+        }
+    }
+}
+@media (min-width:998px) and (max-width:1024px) {
+    #show {
+        .box {
+            height: 60%;
+            flex-basis: 23%;
+        }
+    }
+}
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+
+        .left,
+        .right {
+            display: flex;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .link {
+            width: auto;
+            font-size: 17px;
+        }
+
+        .right {
+            justify-content: flex-end;
+        }
+
+        .left {
+            margin-left: 10%;
+        }
+
+        .toggle {
+            display: none;
+        }
+    }
+}
+
+.navbar {
+    div {
+        display: none;
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+}
+@media (min-width:768px)and(max-width: 998px) {
+    #show {
+        .flex-container-show {
+            .box {
+                height: 47%;
+                flex-basis: 45%;
+            }
+        }
+    }
+
+    #showcase-number2 {
+        height: 600px;
+
+        .flex-container {
+            .box {
+                height: 90%;
+                flex-basis: 30%;
+            }
+
+            .box1 {
+                flex-direction: column;
+
+                .img-box {
+                    width: 100%;
+                    height: 70%;
+                }
+            }
+
+            .box2 {
+                flex-direction: column;
+
+                .img-box {
+                    width: 100%;
+                    height: 70%;
+                }
+            }
+
+            .box3 {
+                flex-direction: column;
+
+                .img-box {
+                    width: 100%;
+                    height: 70%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    #show {
+        .flex-container-show {
+            .box {
+                height: 45%;
+                flex-basis: 47%;
+            }
+        }
+    }
+
+    .navbar.active {
+        .toggle {
+            color: white;
+        }
+
+        div {
+            display: block;
+        }
+    }
+
+    #showcase-number2 {
+        height: 700px;
+
+        .flex-container {
+            .box {
+                height: 30%;
+                flex-basis: 97%;
+            }
+        }
+    }
+}
+@media (max-width: 617px) {
+    #show {
+        height: 800px;
+
+        .flex-container-show {
+            .box {
+                flex-basis: 85%;
+                height: 24%;
+            }
+        }
+    }
+
+    #showcase-number2 {
+        height: 700px;
+
+        .flex-container {
+            .box {
+                height: 30%;
+                flex-basis: 85%;
+            }
+        }
+    }
+}
